@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1 class="text-center">Issue Ticket System</h1>
+
+    <div class="card">
+      <h5 class="card-header text-center">Add New Issue</h5>
+      <div class="card-body">
+        <div class="form-group">
+          <label for="ticketName">Ticket Name</label>
+          <input type="text" class="form-control" id="ticketName" placeholder="Enter name of ticket...">
+        </div>
+
+        <div class="form-group">
+          <label for="ticketSeverity">Ticket Severity</label>
+          <select class="form-control" id="ticketSeverity">
+                <option>High</option>
+                <option>Medium</option>
+                <option>Low</option>
+              </select>
+        </div>
+
+        <div class="form-group">
+          <label for="ticketOwner">Ticket Owner</label>
+          <input type="text" class="form-control" id="ticketOwner" placeholder="Enter name...">
+        </div>
+
+        <div class="form-group">
+          <label for="ticketDescription">Ticket Description</label>
+          <input type="text" class="form-control" id="ticketDescription" placeholder="Enter description...">
+        </div>
+
+        <button id="ticketSubmit" type="submit" class="btn btn-primary btn-block">Submit Ticket</button>
+
+      </div>
+    </div>
+
+    <div id="myTicketList">
+
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
